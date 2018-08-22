@@ -1,0 +1,18 @@
+#!/bin/bash
+clear
+echo "
+Updating Repositories....
+"
+sudo pacman -Syy
+
+echo "
+Installing Packages....
+"
+sudo pacman -Su
+
+echo "
+Rebooting Your Machine in 30 sec
+Press Ctl+C to cancle
+"
+sleep 30
+sudo shutdown -h now
